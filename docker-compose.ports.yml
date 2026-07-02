@@ -1,0 +1,22 @@
+services:
+  postgres:
+    ports: !override
+      - "15432:5432"
+
+  qdrant:
+    ports: !override
+      - "16333:6333"
+      - "16334:6334"
+
+  backend:
+    environment:
+      ALLOWED_ORIGINS: http://localhost:3000,http://localhost:3002,http://frontend:3000
+    ports: !override
+      - "8001:8000"
+
+  frontend:
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8001
+      INTERNAL_API_URL: http://backend:8000
+    ports: !override
+      - "3002:3000"
