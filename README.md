@@ -44,16 +44,6 @@ This monorepo contains:
    - Backend docs: http://localhost:8001/docs
    - Qdrant dashboard: http://localhost:16333/dashboard
 
-## Data Sources
-
-Initial source priorities:
-
-- myScheme: https://www.myscheme.gov.in/
-- National Scholarship Portal: https://scholarships.gov.in/
-- National Portal of India: https://www.india.gov.in/
-- States and UTs Directory: https://www.india.gov.in/explore-india/facts-of-india/states-ut-districts
-- data.gov.in APIs, if a data.gov.in API key is available
-- API Setu, if selected API access is approved
 
 ## Local Development
 
